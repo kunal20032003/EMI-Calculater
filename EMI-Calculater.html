@@ -9,12 +9,12 @@
 <body>
  <div id="main">
   <h1>EMI-Calculater</h1>
-  <p class="marg">Loan-Amount(In Rupees)</p>
-  <input type="number" id="loan-amount">
-  <p class="marg">Interest-Rate(In %)</p>
-  <input type="number" id="interest">
-  <p class="marg">Loan-Tenure(In Years)</p>
-  <input type="number" id="loan-tenure">
+  <p class="marg">Loan-Amount(In Rupees) <span id="amount"></span></p>
+  <input type="range" id="loan-amount" min="1000"  max="1000000" value="50000" step="1000">
+  <p class="marg">Interest-Rate(In %) <span id="loan-interest"></span></p>
+  <input type="range" id="interest" min="1" max="30" step="1">
+  <p class="marg">Loan-Tenure(In Years) <span id="loan-duration"></span></p>
+  <input type="range" id="loan-tenure" min="1" max="20" step="1">
   <button id="btn">Calculate-EMI</button>
   <button id="btn2">Reset All</button>
   <p class="marg">Monthly-EMI: <span id="emi"></span></p>
