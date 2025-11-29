@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: opx;
+}
+input{
+    display: block;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+}
+#main{
+    height:32rem;
+    width:60rem;
+    margin-top: 2rem;
+    background-color: chocolate;
+    border-radius: 1rem;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.marg{
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+input{
+    margin-left: 3rem;
+    height: 2rem;
+    width: 30rem;
+}
+#btn{
+      margin-left: 3rem;
+    height: 2rem;
+    width: 30.5rem;
+    margin-top: 1.5rem;
+    background-color: green;
+}
+#btn2{
+      margin-left: 3rem;
+    height: 2rem;
+    width: 30.5rem;
+    margin-top: 1.5rem;
+    background-color: red;
+}
+#btn+p{
+    font-size: 1.5rem;
+}
+input[type = "number"]:hover{
+    border: 2px solid black;
+}
+button:hover{
+    border: 2px solid black;
+}
