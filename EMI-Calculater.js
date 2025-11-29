@@ -18,8 +18,27 @@ calculate.addEventListener("click", () =>{
 })
 
 reset.addEventListener("click", () =>{
-    loanAmount.value = "";
-    interest.value = "";
-    loanTenure.value = "";
+    loanAmount.value = "50000";
+    interest.value = "1";
+    loanTenure.value = "1";
     result.innerText = "";
 })
+
+let amountDisplay = document.querySelector("#amount");
+let interestDisplay = document.querySelector("#loan-interest");
+let durationDisplay = document.querySelector("#loan-duration");
+
+amountDisplay.innerText = loanAmount.value;
+interestDisplay.innerText = interest.value;
+durationDisplay.innerText = loanTenure.value;
+
+loanAmount.addEventListener("input", function(){
+    amountDisplay.innerText = this.value;
+})
+interest.addEventListener("input", function(){
+    interestDisplay.innerText = this.value;
+})
+loanTenure.addEventListener("input", function(){
+    durationDisplay.innerText = this.value;
+})
+
